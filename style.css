@@ -1,0 +1,347 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Catamaran", sans-serif;
+    min-height: 100vh;
+    min-width: 120vh;
+    margin-inline: auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid red;
+
+}
+
+.page-size-A4 {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    background: white;
+}
+
+.section-left-column {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-right-column {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    background-color: lightgrey;
+}
+
+h1 {
+    font-family: "Yellowtail", cursive;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+}
+
+.row-in-section-right-column {
+    /*border: 1px solid red;*/
+    margin: 20px;
+}
+
+/*--------------------------- SPACE WHERE IS LOGOS ---------------------------*/
+.space-with-logos {
+    display: flex;
+    /*border: 1px solid red;*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circular-logo {
+    /*border: 1px solid blue;*/
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 17.5px;
+    margin-top: 10px;
+}
+
+.text-for-logo {
+    display: inline;
+    /*border: 1px solid blue;*/
+    width: 400px;
+    text-align: justify;
+}
+
+/*--------------------------- COURSES SPACE ---------------------------*/
+.link {
+    color: blue;
+    font-weight: normal;
+}
+
+/* --------------------------- DONUTS GRAPH ---------------------------*/
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#myChart {
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+/* --------------------------- PARTS IN THE LEFT COLUMN OF THE PAGE   ---------------------------*/
+
+.profile-picture {
+    width: 160px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+}
+
+.hr-line {
+    width: 100px;
+    /* margin for left and right */
+    margin: 8px;
+    border-bottom: 2.4px solid black;
+    border-radius: 50px;
+}
+
+.box {
+    width: 95%;
+    font-size: 16px;
+    /*border: 1px solid red;*/
+}
+
+section {
+    display: flex;
+}
+
+/* -------------------------------------------- LANGUAGES -------------------------------------------- */
+
+#slovak-language {
+    animation: slovak-language-fill 2s forwards;
+}
+
+@keyframes slovak-language-fill {
+    from {
+        width: 0%; /* Explicitly define starting width */
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#english-language {
+    animation: english-language-fill 2s forwards;
+}
+
+@keyframes english-language-fill {
+    from {
+        width: 0%; /* Explicitly define starting width */
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+span {
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.language-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.bar {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #f2f3f4;
+    margin: 0 auto;
+}
+
+span {
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.bar div {
+    position: relative;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #bf9aca;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+h6 {
+    border: 1px solid red;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+/* -------------------------------------- hover text --------------------------------------*/
+
+.hover-text {
+    position: relative;
+    /* border-bottom: 1px dotted black; */
+}
+
+.hover-text:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 420px;
+    height: 275px;
+    background-color: #eccfc3;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: -200px;
+    /* top: 110%; */
+}
+
+.hover-text:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/* 1. ability, Adding css animation */
+
+#communication-bar {
+    animation: communication-bar-fill 2s forwards;
+}
+
+@keyframes communication-bar-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+/* 2. ability, Adding css animation */
+
+#self-motivation-bar {
+    animation: self-motivation-fill 2s forwards;
+}
+
+@keyframes self-motivation-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+/* 3. ability, Adding css animation */
+
+#time-management-bar {
+    animation: time-management-fill 2s forwards;
+}
+
+@keyframes time-management-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+/* 4. ability, Adding css animation */
+
+#teamwork-bar {
+    animation: teamwork-fill 2s forwards;
+}
+
+@keyframes teamwork-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+/* 5. ability, Adding css animation */
+
+#creativity-bar {
+    animation: creativity-fill 2s forwards;
+}
+
+@keyframes creativity-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 88%;
+    }
+}
+
+.box2 {
+    /*border: 1px solid blue;*/
+}
+
+.box-reference {
+    width: 95%;
+    font-size: 16px;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: space-between;
+}
