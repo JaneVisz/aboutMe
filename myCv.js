@@ -1,7 +1,7 @@
 let myChart = document.getElementById("myChart").getContext("2d");
 
 let massChart = new Chart(myChart, {
-    type: "doughnut", // bar, horizontalBar, pie, doughnut, radar, polarArea
+    type: "doughnut",
     data: {
         labels: [
             "TypeScript",
@@ -14,7 +14,7 @@ let massChart = new Chart(myChart, {
         datasets: [
             {
                 label: "My time",
-                data: [17, 17, 17, 17, 17,17],
+                data: [17, 17, 17, 17, 17, 17],
                 backgroundColor: [
                     "#BF9ACA",
                     "white",

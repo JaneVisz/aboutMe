@@ -2,42 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <script defer src="myCv.js"></script>
-    <link href="style.css" rel="stylesheet"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Jana Viszkocsilova</title>
-    <link rel="stylesheet" href="style-test.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="myCv.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
     <script src="https://kit.fontawesome.com/e9c6802667.js" crossorigin="anonymous"></script>
-    <script src="https://icons.getbootstrap.com/icons/github/" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 </head>
 
 <body>
-
+<!-- 2 A4 pages -->
 <div class="content">
-
-    <!-- first page -->
+    <!-- first A4 page -->
     <div class="page-size-A4">
         <div class="section-left-column">
-
             <img class="profile-picture" src=https://i.postimg.cc/NF8gsSpH/cv-pic-ja.png alt="">
-
-            <!-- first box -->
+            <!-- first box: CONTACTS -->
             <div class="box">
                 <section>
                     <div class="hr-line"></div>
@@ -50,14 +34,13 @@
                 <div><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Prague, Czech Republic</div>
             </div>
 
-            <!-- second box-->
+            <!-- second box: LANGUAGES -->
             <div class="box">
                 <section>
                     <div class="hr-line"></div>
                     <div><i class="fa fa-language"></i></div>
                     <div class="hr-line"></div>
                 </section>
-
                 <h3><strong>LANGUAGES</strong></h3>
                 <div>
                     <div class="language-details">
@@ -68,7 +51,6 @@
                         <div id="slovak-language"></div>
                     </div>
                 </div>
-
                 <div>
                     <div class="language-details">
                         <span>English</span>
@@ -80,7 +62,7 @@
                 </div>
             </div>
 
-            <!-- third box -->
+            <!-- third box: SOCIAL MEDIA PROFILES -->
             <div class="box" id="links">
                 <section>
                     <div class="hr-line"></div>
@@ -91,15 +73,14 @@
                 <div><i class="fab fa-linkedin"></i><a
                         href="https://www.linkedin.com/in/jana-viszkocsilova/"
                         target="_blank">&nbsp;&nbsp;<u>LinkedIn</u></a></div>
-                <div><i class="fa fa-github-square"></i><a href="https://github.com/JaneVisz"
-                                                           target="_blank">&nbsp;&nbsp;<u>GitHub</u></a>
+                <div><i class="fa fa-github-square"></i><a href="https://github.com/JaneVisz" target="_blank">&nbsp;&nbsp;<u>GitHub</u></a>
                 </div>
                 <div><i class="fab fa-instagram-square"></i><a
                         href="https://www.instagram.com/____jane_1991____/"
                         target="_blank">&nbsp;&nbsp;<u>Instagram</u></a></div>
             </div>
 
-            <!-- fourth box -->
+            <!-- fourth box: PROJECTS -->
             <div class="box" id="project">
                 <section>
                     <div class="hr-line"></div>
@@ -111,66 +92,53 @@
                 <div>Sample tasks: <a
                         href="https://janevisz.github.io/gallery-project/myWebsite.html"
                         class="hover-text"
-                        data-hover="✅Green Fox Academy (06/2022): The Gallery project is fully uses HTML, CSS and JavaScript language (DOM).
-                            On this webpage, it is possible to click through the photos using the arrow buttons and also display all photos with play button automatically. Due to the simplicity of the project, I used dummy data (array of objects), instead of using a database.
-                            Since the page is static, its entire content is available on github. (click on the blue title 👉🏾 Gallery)"
+                        data-hover="✅Green Fox Academy (06/2022):
+                        The 'Gallery project' fully utilizes HTML, CSS, and the JavaScript language (DOM). On this webpage, users can click through the photos using the arrow buttons or display all photos automatically with the play button. Due to the project's simplicity, I used dummy data (an array of objects) instead of a database. Since the page is static, its entire content is available on GitHub. (Click on 👉🏾 Gallery)"
                         target=" _blank">&nbsp;&nbsp;<u>Gallery</u></a><a
                         href="https://janevisz.github.io/reddit-project/reddit-project.mp4" class="hover-text"
-                        data-hover="✅Green Fox Academy (08/2022): The Reddit project is an imitation of reddit. The website allows you to insert a URL of the article and its name. You can remove this post as well. There is also an option to vote (upvote or downvote), so you can increase or decrease the score of the post. In this little project we used HTML, CSS, JavaScript, express and mysql as dependencies. Since I used my local database (MySql), you can see the video on my link in order to see the functionality of this app.
-                            It is possible to check the code on my github. (click on the blue title 👉🏾 Reddit)"
+                        data-hover="✅Green Fox Academy (06/2022): This project is inspired by Reddit. The website allows users to insert an article's URL and its title. Posts can also be removed. Additionally, users have the option to vote (either upvote or downvote) to influence the score of the post. For this project, we utilized HTML, CSS, JavaScript, Express, and MySQL as dependencies. Since I used my local database (MySQL), you can see the video on my link to understand the functionality of this app. (click on 👉🏾 Reddit)"
                         target="_blank">&nbsp;&nbsp;<u>Reddit</u></a>
                 </div>
                 <br>
                 <div><i class="fa fa-laptop-code"></i>&nbsp;&nbsp;<strong>Anect a.s, 4/2023:</strong></div>
-
                 <div>Sample task:<a
                         href="https://janevisz.github.io/Vue-project/front-end.mp4"
                         class="hover-text"
-                        data-hover="✅Anect a.s (04/2023): "
+                        data-hover="✅Anect a.s (04/2023): This application was developed using the Vue.js 2 framework to practice data handling. I utilized provided API endpoints to retrieve user data, including first and last names. Each user was assigned a unique identifier, and I used this to update, delete, and retrieve detailed information. I tracked updates to names and handled all server responses, displaying warning messages for any errors after executing POST, GET, DELETE and UPDATE methods. To manage data efficiently across the app's components, I integrated the Vuex library. (click on 👉🏾 Vue.js 2 app)"
                         target=" _blank">&nbsp;&nbsp;<u>Vue.js 2 app</u></a>
                 </div>
             </div>
-
-
         </div>
         <div class="section-right-column">
-            <!-- header -->
+            <!-- HEADER -->
             <header>
                 <h1>Ing. Jana Viszkocsilova</h1>
                 <h3 id="junior">- Junior Front-End Developer -</h3>
             </header>
             <br>
             <!-- PROFILE -->
-            <div class=row-in-section-right-column>
+            <div class=row-right-column>
                 <h3><i class="fas fa-user-circle"></i><strong>
                     PROFILE</strong></h3>
                 <p> “I am an aspiring junior front-end software developer. For the last three years I have been working
-                    as
-                    an integrated
-                    circuits (IC) designer, but my true passion is programming and creating something tangible, which is
-                    why I
-                    recently
-                    completed a super intensive programming course. Over 4.5 months of intensive training 8 hours a day,
-                    I
-                    gained
-                    knowledge as a full stack developer, and had the chance to work on concrete projects using different
-                    frameworks including
-                    Django and Vue.js. In addition to the programming skills, the training enabled me to refine my
-                    teamwork
-                    and time
-                    management skills thanks to the work conditions mirroring those of professional settings. I am keen
-                    to put
-                    my skills and
-                    knowledge to practice as a front-end software developer."
+                    as an integrated circuits (IC) designer, but my true passion is programming and creating something
+                    tangible, which is
+                    why I recently completed a super intensive programming course. Over 4.5 months of intensive training
+                    8 hours a day, I
+                    gained knowledge as a full stack developer, and had the chance to work on concrete projects using
+                    different
+                    frameworks including Django and Vue.js. In addition to the programming skills, the training enabled
+                    me to refine my
+                    teamwork and time management skills thanks to the work conditions mirroring those of professional
+                    settings. I am keen
+                    to put my skills and knowledge to practice as a front-end software developer."
                 </p>
             </div>
 
-
             <!-- EDUCATION -->
-            <div class=row-in-section-right-column>
+            <div class=row-right-column>
                 <h3><i class="fas fa-user-graduate"></i><strong>
                     EDUCATION</strong></h3>
-
                 <div class="space-with-logos">
                     <div><img class="circular-logo" src="https://i.postimg.cc/PxY6dq5d/stu-log.png" alt=""></div>
                     <div class="text-for-logo"><strong>Slovak University of Technology in
@@ -178,7 +146,6 @@
                         Engineering and Computer Science<br>
                         Master's degree in Electronics and Photonics
                     </div>
-
                     <div><img class="circular-logo" src="https://i.postimg.cc/PxY6dq5d/stu-log.png" alt=""></div>
                     <div class="text-for-logo"><strong>Slovak University of Technology in
                         Bratislava</strong><br>9/2011 - 6/2015<br>Faculty of Civil
@@ -189,7 +156,7 @@
             </div>
 
             <!-- COURSES -->
-            <div class="row-in-section-right-column">
+            <div class="row-right-column">
                 <h3><i class="fas fa-laptop-code"></i><strong>
                     COURSES</strong></h3>
                 <p><strong>Junior Software Developer course</strong><br> 03-08/2022 | <a class="link"
@@ -200,8 +167,6 @@
                     <a class="link" href="https://pyladies.cz/praha/" target="_blank"><u>pyladies.cz</u></a>
                 </p>
             </div>
-
-
         </div>
         <!--  end of the first page -->
     </div>
@@ -209,7 +174,7 @@
     <!--  second page -->
     <div class="page-size-A4">
         <div class="section-left-column">
-            <!-- SOFT SKILLS -->
+            <!-- first box: SOFT SKILLS -->
             <div class="box">
                 <section>
                     <div class="hr-line"></div>
@@ -217,7 +182,7 @@
                     <div class="hr-line"></div>
                 </section>
                 <h3><strong>SOFT SKILLS</strong></h3>
-                <div class="skill">
+                <div>
                     <div class="details">
                         <span>Time management</span>
                         <span>85%</span>
@@ -226,7 +191,7 @@
                         <div id="time-management-bar">
                         </div>
                     </div>
-                    <div class="skills">
+                    <div>
                         <div class="details">
                             <span>Communication</span>
                             <span>75%</span>
@@ -235,7 +200,7 @@
                             <div id="communication-bar"></div>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div>
                         <div class="details">
                             <span>Self-motivation</span>
                             <span>80%</span>
@@ -245,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill">
+                <div>
                     <div class="details">
                         <span>Teamwork</span>
                         <span>85%</span>
@@ -254,7 +219,7 @@
                         <div id="teamwork-bar"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div>
                     <div class="details">
                         <span>Creativity</span>
                         <span>88%</span>
@@ -265,7 +230,7 @@
                 </div>
             </div>
 
-            <!-- HOBBIES -->
+            <!-- second box: HOBBIES -->
             <div class="box">
                 <section>
                     <div class="hr-line"></div>
@@ -280,7 +245,7 @@
                 <div><i class="fas fa-book-reader"></i>&nbsp;&nbsp; Reading</div>
             </div>
 
-            <!-- REFERENCES -->
+            <!-- third box: REFERENCES -->
             <div class="box-reference">
                 <section>
                     <div class="hr-line"></div>
@@ -288,28 +253,39 @@
                     <div class="hr-line"></div>
                 </section>
                 <h3><strong>REFERENCES</strong></h3>
-                <div class="box2">
+                <div>
                     <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/sandorvass/"
                                                                   target="_blank"><u>Sándor
-                    Vass,</u></a><br> Mentor of Programming,<br> Green Fox Academy, Budapest
+                    Vass,</u></a><br>
+                    <li class="no-bullet">Mentor of Programming,</li>
+                    <li class="no-bullet">Green Fox Academy, Budapest</li>
                 </div>
-                <div class="box2">
+                <div>
                     <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a
                         href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-jane%C4%8Dek-21b10395/" target="_blank"><u>Lukáš
-                    Janeček,</u></a><br> Mentor
-                    of Programming,<br> Green Fox Academy, Prague
+                    Janeček,</u></a>
+                    <li class="no-bullet"> Mentor
+                        of Programming,
+                    </li>
+                    <li class="no-bullet"> Green Fox Academy, Prague</li>
                 </div>
-                <div class="box2">
+                <div>
                     <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/kovalskyjan/"
                                                                   target="_blank"><u>Ing. Jan
-                    Kovalský,</u></a></a><br>
-                    Senior Engineering Director,<br> Industrial ASIC BU at Dialog Semiconductor
+                    Kovalský,</u></a></a>
+                    <li class="no-bullet">
+                        Senior Engineering Director,
+                    </li>
+                    <li class="no-bullet"> Industrial ASIC BU at Dialog Semiconductor</li>
                 </div>
-                <div class="box2">
+                <div>
                     <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a
                         href="https://www.linkedin.com/in/jiri-macku-0b71a594/" target="_blank"><u>Ing. Jiri
-                    Macku,</u></a><br>
-                    Senior Staff Engineer,<br> Industrial ASIC BU at Dialog Semiconductor
+                    Macku,</u></a>
+                    <li class="no-bullet">
+                        Senior Staff Engineer,
+                    </li>
+                    <li class="no-bullet"> Industrial ASIC BU at Dialog Semiconductor</li>
                 </div>
             </div>
         </div>
@@ -317,8 +293,8 @@
         <!-- 2 A4-page, right side of the page -->
         <div class="section-right-column">
 
-            <!-- COMPUTER SKILLS -->
-            <div class="row-in-section-right-column">
+            <!-- SOFTWARE SKILLS -->
+            <div class="row-right-column">
                 <h3><i class="fas fa-wrench"></i><strong>
                     SOFTWARE SKILLS</strong></h3>
                 <div class="chart-container">
@@ -326,7 +302,8 @@
                 </div>
             </div>
 
-            <div class="row-in-section-right-column">
+            <!-- WORK EXPERIENCE -->
+            <div class="row-right-column">
                 <h3><i class="fas fa-briefcase"></i><strong>
                     WORK EXPERIENCE</strong></h3>
                 <p>"I started my career in the company Adesto Technologies, which is a leading
@@ -339,34 +316,25 @@
                     that develop their own design. My responsibilities were verifying the viability of different
                     designs and designing layout of IC.
                     "</p>
-                <!-- SPACE FOR LOGOS -->
+
                 <div class="space-with-logos">
                     <div><img class="circular-logo" src="https://i.postimg.cc/KckCzC5C/remesas-img.png" alt=""></div>
                     <div class="text-for-logo"><strong>Renesas
                         Electronics, Prague</strong><br>07/2018 - 03/2022<br>Analog Design Engineer
                     </div>
-
                     <div><img class="circular-logo" src="https://i.postimg.cc/y6bFTnfm/anect-logo.png" alt=""></div>
                     <div class="text-for-logo"><strong>Anect, Prague</strong><br>11/2022 - 04/2023<br>Junior Front End
                         Developer
                     </div>
-
                     <div><img class="circular-logo" src="https://i.postimg.cc/BQ94pN7h/aveco-logo.jpg" alt=""></div>
                     <div class="text-for-logo"><strong>Aveco, Prague</strong><br>05/2023 - now<br>Junior Front End
                         Developer
                     </div>
                 </div>
             </div>
-
         </div>
-
-
         <!--  end of the second page -->
     </div>
 </div>
-
-
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="scripts.js"></script>
 </html>

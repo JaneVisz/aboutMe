@@ -14,8 +14,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-    /*border: 1px solid red;*/
-
 }
 
 .page-size-A4 {
@@ -60,26 +58,38 @@ h3 {
     font-weight: normal;
 }
 
-.row-in-section-right-column {
-    /*border: 1px solid red;*/
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.link {
+    color: blue;
+    font-weight: normal;
+}
+
+.row-right-column {
     margin: 20px;
 }
 
-/*--------------------------- SPACE WHERE IS LOGOS ---------------------------*/
+/*--------------------------- LOGOS SPACE ---------------------------*/
 .space-with-logos {
     display: flex;
-    /*border: 1px solid red;*/
+    /*border: 1px solid yellow;*/
     justify-content: space-between;
     align-items: center;
     gap: 15px;
     width: 500px;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 .circular-logo {
-    /*border: 1px solid blue;*/
     width: 60px;
     border-radius: 50%;
     margin-left: 17.5px;
@@ -88,15 +98,8 @@ h3 {
 
 .text-for-logo {
     display: inline;
-    /*border: 1px solid blue;*/
     width: 400px;
     text-align: justify;
-}
-
-/*--------------------------- COURSES SPACE ---------------------------*/
-.link {
-    color: blue;
-    font-weight: normal;
 }
 
 /* --------------------------- DONUTS GRAPH ---------------------------*/
@@ -104,7 +107,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid black;*/
     height: 200px;
     width: 400px;
     border-radius: 20px;
@@ -113,10 +115,9 @@ h3 {
 
 #myChart {
     margin: 0 auto;
-    /*border: 1px solid black;*/
 }
 
-/* --------------------------- PARTS IN THE LEFT COLUMN OF THE PAGE   ---------------------------*/
+/* --------------------------- SPACE IN THE LEFT COLUMN ---------------------------*/
 
 .profile-picture {
     width: 160px;
@@ -137,22 +138,21 @@ h3 {
 .box {
     width: 95%;
     font-size: 16px;
-    /*border: 1px solid red;*/
 }
 
+/* -------------------------------------------- HORIZONTAL LINES SPACE -------------------------------------------- */
 section {
     display: flex;
 }
 
 /* -------------------------------------------- LANGUAGES -------------------------------------------- */
-
 #slovak-language {
     animation: slovak-language-fill 2s forwards;
 }
 
 @keyframes slovak-language-fill {
     from {
-        width: 0%; /* Explicitly define starting width */
+        width: 0; /* Explicitly define starting width */
     }
     to {
         width: 100%;
@@ -165,13 +165,12 @@ section {
 
 @keyframes english-language-fill {
     from {
-        width: 0%; /* Explicitly define starting width */
+        width: 0; /* Explicitly define starting width */
     }
     to {
         width: 70%;
     }
 }
-
 
 span {
     font-family: "Catamaran", sans-serif;
@@ -186,7 +185,6 @@ span {
 }
 
 .bar {
-    position: relative;
     border: 1px solid black;
     border-radius: 10px;
     background: #f2f3f4;
@@ -200,32 +198,14 @@ span {
 }
 
 .bar div {
-    position: relative;
     height: 6px;
     border-radius: 10px;
     background-color: #bf9aca;
 }
 
-a {
-    color: blue;
-    text-decoration: none;
-    /* font-weight: bold; */
-}
-
-h6 {
-    border: 1px solid red;
-}
-
-a:hover {
-    color: purple;
-    text-decoration: none;
-}
-
-/* -------------------------------------- hover text --------------------------------------*/
-
+/* -------------------------------------- PROJECTS (hover text) --------------------------------------*/
 .hover-text {
     position: relative;
-    /* border-bottom: 1px dotted black; */
 }
 
 .hover-text:before {
@@ -244,7 +224,6 @@ a:hover {
     z-index: 1;
     left: 50px;
     top: -200px;
-    /* top: 110%; */
 }
 
 .hover-text:hover:before {
@@ -256,6 +235,7 @@ h4 {
     text-align: center;
 }
 
+/* -------------------------------------- SOFT SKILLS --------------------------------------*/
 
 /* 1. ability, Adding css animation */
 
@@ -265,7 +245,7 @@ h4 {
 
 @keyframes communication-bar-fill {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 75%;
@@ -280,7 +260,7 @@ h4 {
 
 @keyframes self-motivation-fill {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 80%;
@@ -295,7 +275,7 @@ h4 {
 
 @keyframes time-management-fill {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 85%;
@@ -310,7 +290,7 @@ h4 {
 
 @keyframes teamwork-fill {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 85%;
@@ -325,23 +305,24 @@ h4 {
 
 @keyframes creativity-fill {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 88%;
     }
 }
 
-.box2 {
-    /*border: 1px solid blue;*/
-}
-
+/* -------------------------------------- REFERENCES --------------------------------------*/
 .box-reference {
     width: 95%;
     font-size: 16px;
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-content: space-between;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding-left: 20px;
 }
