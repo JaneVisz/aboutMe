@@ -29,10 +29,12 @@ body {
     border-radius: 20px;
     margin: 2px;
     background-color: lightgrey;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
 }
 
 .section-right-column {
@@ -41,6 +43,7 @@ body {
     border-radius: 20px;
     margin: 2px;
     background-color: lightgrey;
+    overflow: hidden;
 }
 
 h1 {
@@ -75,6 +78,7 @@ a:hover {
 
 .row-right-column {
     margin: 20px;
+    /*border: 1px solid green;*/
 }
 
 /*--------------------------- LOGOS SPACE ---------------------------*/
@@ -138,6 +142,7 @@ a:hover {
 .box {
     width: 95%;
     font-size: 16px;
+    /*border: 1px solid blue;*/
 }
 
 /* -------------------------------------------- HORIZONTAL LINES SPACE -------------------------------------------- */
@@ -313,14 +318,6 @@ h4 {
 }
 
 /* -------------------------------------- REFERENCES --------------------------------------*/
-.box-reference {
-    width: 95%;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-content: space-between;
-}
 
 .no-bullet {
     list-style-type: none;
