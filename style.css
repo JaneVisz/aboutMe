@@ -23,7 +23,16 @@ body {
     background: white;
 }
 
-.section-left-column {
+.main-column {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+.side-column {
     width: 30%;
     border: 2px solid black;
     border-radius: 20px;
@@ -34,16 +43,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    overflow: hidden;
-}
-
-.section-right-column {
-    width: 70%;
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 2px;
-    background-color: lightgrey;
-    overflow: hidden;
 }
 
 h1 {
@@ -76,11 +75,10 @@ a:hover {
     font-weight: normal;
 }
 
-.row-right-column {
+.section-in-main-column {
     margin: 20px;
-    /*border: 1px solid green;*/
+    border: 1px solid red;
 }
-
 /*--------------------------- LOGOS SPACE ---------------------------*/
 .space-with-logos {
     display: flex;
