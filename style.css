@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: #708AAF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +38,10 @@ body {
     border-radius: 20px;
     margin: 2px;
     background-color: lightgrey;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-
 }
 
 .overflow-hidden-text {
@@ -88,7 +86,6 @@ a:hover {
 /*--------------------------- LOGOS SPACE ---------------------------*/
 .space-with-logos {
     display: flex;
-    /*border: 1px solid yellow;*/
     justify-content: space-between;
     align-items: center;
     gap: 15px;
@@ -126,7 +123,6 @@ a:hover {
 }
 
 /* --------------------------- SPACE IN THE LEFT COLUMN ---------------------------*/
-
 .profile-picture {
     width: 160px;
     height: auto;
@@ -137,7 +133,6 @@ a:hover {
 
 .hr-line {
     width: 100px;
-    /* margin for left and right */
     margin: 8px;
     border-bottom: 2.4px solid black;
     border-radius: 50px;
@@ -146,7 +141,6 @@ a:hover {
 .box {
     width: 95%;
     font-size: 16px;
-    /*border: 1px solid blue;*/
 }
 
 /* -------------------------------------------- HORIZONTAL LINES SPACE -------------------------------------------- */
@@ -174,7 +168,7 @@ section {
 
 @keyframes english-language-fill {
     from {
-        width: 0; /* Explicitly define starting width */
+        width: 0;
     }
     to {
         width: 70%;
@@ -209,7 +203,7 @@ span {
 .bar div {
     height: 6px;
     border-radius: 10px;
-    background-color: #bf9aca;
+    background-color: #708AAF;
 }
 
 /* -------------------------------------- PROJECTS (hover text) --------------------------------------*/
@@ -245,9 +239,7 @@ h4 {
 }
 
 /* -------------------------------------- SOFT SKILLS --------------------------------------*/
-
 /* 1. ability, Adding css animation */
-
 #communication-bar {
     animation: communication-bar-fill 2s forwards;
 }
@@ -262,7 +254,6 @@ h4 {
 }
 
 /* 2. ability, Adding css animation */
-
 #self-motivation-bar {
     animation: self-motivation-fill 2s forwards;
 }
@@ -322,8 +313,52 @@ h4 {
 }
 
 /* -------------------------------------- REFERENCES --------------------------------------*/
-
 .no-bullet {
     list-style-type: none;
     padding-left: 20px;
+}
+
+/* -------------------------------------- INFO ICON, PDF ICON --------------------------------------*/
+.img-logo-info {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.img-logo-Pdf {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+.hover-text-info {
+    position: relative;
+}
+
+.hover-text-info:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 230px;
+    height: 140px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: opacity 1s ease-in-out;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+}
+
+.hover-text-info:hover:before {
+    opacity: 1;
+    visibility: visible;
 }
